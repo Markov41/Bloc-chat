@@ -1,0 +1,94 @@
+[debug] [2017-06-18T21:54:39.296Z] ----------------------------------------------------------------------
+[debug] [2017-06-18T21:54:39.298Z] Command:      C:\Program Files\nodejs\node.exe C:\Users\Main\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2017-06-18T21:54:39.298Z] CLI Version:  3.9.1
+[debug] [2017-06-18T21:54:39.298Z] Platform:     win32
+[debug] [2017-06-18T21:54:39.298Z] Node Version: v6.10.2
+[debug] [2017-06-18T21:54:39.298Z] Time:         Sun Jun 18 2017 16:54:39 GMT-0500 (Central Daylight Time)
+[debug] [2017-06-18T21:54:39.299Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-06-18T21:54:39.306Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-06-18T21:54:39.306Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\users\main\bloc\chat\chat
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2017-06-18T21:55:06.821Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-06-18T21:55:06.821Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/f5k2y-DImhoJ81p29VemlO1ChkuicZ-4aDymQmXM018',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Jun 18 2017 16:55:06 GMT-0500 (Central Daylight Time)
+[debug] [2017-06-18T21:55:07.021Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-18T21:55:07.027Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ Sun Jun 18 2017 16:55:07 GMT-0500 (Central Daylight Time)
+[debug] [2017-06-18T21:55:07.537Z] <<< HTTP RESPONSE 200
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2017-06-18T21:56:11.441Z] >>> HTTP REQUEST GET https://bloc-chat-61968.firebaseio.com/.settings/rules.json  
+ Sun Jun 18 2017 16:56:11 GMT-0500 (Central Daylight Time)
+[debug] [2017-06-18T21:56:11.761Z] <<< HTTP RESPONSE 200
+[info] +  Database Rules for bloc-chat-61968 have been downloaded to database.rules.json.
+[info] Future modifications to database.rules.json will update Database Rules when you run
+[info] firebase deploy.
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2017-06-18T21:56:11.766Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-06-18T21:56:11.767Z] > authorizing via signed-in user
+[debug] [2017-06-18T21:56:11.767Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-06-18T21:56:11.767Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/f5k2y-DImhoJ81p29VemlO1ChkuicZ-4aDymQmXM018',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Jun 18 2017 16:56:11 GMT-0500 (Central Daylight Time)
+[debug] [2017-06-18T21:56:11.876Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-18T21:56:11.881Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bloc-chat-61968  
+ Sun Jun 18 2017 16:56:11 GMT-0500 (Central Daylight Time)
+[debug] [2017-06-18T21:56:12.265Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-18T21:56:12.265Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/bloc-chat-61968/tokens  
+ Sun Jun 18 2017 16:56:12 GMT-0500 (Central Daylight Time)
+[debug] [2017-06-18T21:56:12.594Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-18T21:56:12.594Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/bloc-chat-61968?updateMask=usageSettings { usageSettings: { consumerEnableStatus: 'ENABLED' } } 
+ Sun Jun 18 2017 16:56:12 GMT-0500 (Central Daylight Time)
+[debug] [2017-06-18T21:56:12.595Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/bloc-chat-61968?updateMask=usageSettings { usageSettings: { consumerEnableStatus: 'ENABLED' } } 
+ Sun Jun 18 2017 16:56:12 GMT-0500 (Central Daylight Time)
+[info] +  Wrote functions/package.json
+[info] +  Wrote functions/index.js
+[debug] [2017-06-18T21:56:14.416Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-18T21:56:14.721Z] <<< HTTP RESPONSE 200
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2017-06-18T21:57:01.353Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ Sun Jun 18 2017 16:57:01 GMT-0500 (Central Daylight Time)
+[debug] [2017-06-18T21:57:01.482Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-18T21:57:02.421Z] RangeError: Maximum call stack size exceeded
+[error] 
+[error] Error: An unexpected error has occurred.
