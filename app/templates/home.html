@@ -17,5 +17,16 @@
             <div class="media-body">{{ message.content }}</div>
             <div class="text-right time">Sent at {{ message.sentAt }}</div>
         </li>
+
+        <div class="newMessage" ng-if="activeRoom">
+            <form ng-submit="sendMessage(messageText, activeRoom)">
+                <div class="input-group animated fadeIn">
+                    <textarea id="textBox" input type="text" class="form-control finderBar" ng-model="messageText" title="messageText" placeholder="Your Message" cols="92" autofocus></textarea>
+                </div>
+            </form>
+            <button type="button" class="btn btn-default" ng-click="sendMessage(messageText, activeRoom)">Send</button>
+        </div>
+
     </div>
+
 </div>

@@ -6,6 +6,7 @@
             $scope.activeRoom = room;
             $scope.messages = Message.getByRoomId(room.$id);
         };
+        $scope.sendMessage = Message.sendMessage;
     }
 
 
